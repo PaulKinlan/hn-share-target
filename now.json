@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "hn-share",
+  "builds": [{
+    "src": "site/**/*",
+    "use": "@now/static"
+  }],
+  "routes": [
+    {"src": "/(.*)", "dest": "/site/$1"}
+  ]
+}

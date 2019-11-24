@@ -1,0 +1,9 @@
+{
+  "name": "hn-poster-sw",
+  "devDependencies": {
+    "now": "^16.4.4"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
