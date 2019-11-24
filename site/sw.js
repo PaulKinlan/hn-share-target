@@ -6,9 +6,7 @@ onfetch = async (event) => {
   const title = encodeURIComponent(url.searchParams.get('title'))
   const hnUrl = `https://news.ycombinator.com/submitlink?u=${location}&t=${title}`
 
-  event.respondWith(Response.redirect(hnUrl));
-
-  event.waitUntil(event.respondWith(Response.redirect('/share/image/')));
+  event.waitUntil(event.respondWith(Response.redirect(hnUrl)));
 };
 
 oninstall = () => {
